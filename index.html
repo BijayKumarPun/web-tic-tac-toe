@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Tic Tac Toe</title>
-        <link rel="stylesheet" href="element-position.css">
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet"
+          href="element-position.css">
     </link>
-    <link rel="stylesheet" href="homepage-style.css"></style>
-    </head>
+    <link rel="stylesheet"
+          href="homepage-style.css">
+</link>
 
-    <body>
-<div class="menu-container">
-    <div class="text-container">
-Tic Tac Toe
-    </div>
-    <div class="button-container">
-        <button class="button">New Game</button>
-        <button class="button">About</button>
-    </div>
-</div>
 
-    </body>
+
+
+</head>
+
+<body>
+    <div class="menu-container">
+        <div class="text-container">
+            Tic Tac Toe
+        </div>
+        <div class="button-container" >
+            <div class="about-text" id="about-game">
+                Designed and developed by BKP
+            </div>
+            <button class="button" id="buttonNewGame">New Game</button>
+            <button class="button" id="buttonAbout">About</button>
+        </div>
+    </div>
+
+    <div class="about-container" style="display:none;">
+        This is the about page
+    </div>
+
+
+    <script src="homepage-interaction.js"></script>
+</body>
+
 </html>

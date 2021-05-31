@@ -13,12 +13,22 @@
     /* background-color: beige; */
     color: rgb(243, 243, 243);
     font-size: 48px;
-    margin: 28px;
+    margin: 48px;
 
 }
 .button-container{
     display: flex;
     flex-direction: column;
-    height: fit-content;
     
+}
+
+#buttonNewGame{
+  visibility: visible;
+  /* display: none; */
+}
+
+.about-text{
+    visibility: hidden;
+    font-style:italic;
+    color: rgb(255, 255, 255);
 }

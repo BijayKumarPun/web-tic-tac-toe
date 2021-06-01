@@ -43,7 +43,17 @@ function isBackButtonVisible(){
 
 function onClickNewGame(){
     console.log("New Game Clicked");
+hideGameMenu();
+showGameplayUI();
 
+}
+
+function hideGameMenu(){
+    document.getElementsByClassName("menu-container")[0].style.display='none';
+}
+
+function showGameplayUI(){
+    document.getElementsByClassName("game-container")[0].style.display='flex';
 }
 
 
@@ -86,7 +96,7 @@ for(element in hideElementsByClass.arguments){
 }
 
 //test
-shouldHideMenuContainer = true;
+shouldHideMenuContainer = false;
 if(shouldHideMenuContainer){
     document.getElementsByClassName("menu-container")[0].style.display="none";
 }

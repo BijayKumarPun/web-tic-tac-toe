@@ -46,6 +46,10 @@ function onClickNewGame(){
 hideGameMenu();
 showGameplayUI();
 
+startNewGame(); //from another JS file
+// resetBoard(); //form another JS file
+
+
 }
 
 function hideGameMenu(){
@@ -54,6 +58,7 @@ function hideGameMenu(){
 
 function showGameplayUI(){
     document.getElementsByClassName("game-container")[0].style.display='flex';
+    // startNewGame(); //from another JS file //
 }
 
 

@@ -4,6 +4,7 @@ function onClickBackButton(){
     console.log("onClickBackButton")
 hideGameplayUI();
 displayMainMenu();
+
 }
 
 document.getElementById("gameButtonBack").onclick = 

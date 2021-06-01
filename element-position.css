@@ -6,7 +6,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(10, 74, 110, 0.788);
 }
 
 .text-container{
@@ -31,4 +30,63 @@
     visibility: hidden;
     font-style:italic;
     color: rgb(255, 255, 255);
+}
+
+.game-container{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game-container-item{
+    /* background-color: white; */
+    margin: 12px 0px 12px 0px;
+}
+
+.game-stat-container{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items:center;
+}
+
+.game-stat-score-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.score-text{
+    padding: 12px;
+    font-size: 1.5em;
+    /* background-color: pink; */
+    color: white;
+}
+
+#score-text-divider{
+    /* background-color: blue; */
+    font-size: 2.5em
+}
+
+.game-grid{
+    /* background-color: rgb(235, 11, 198); */
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    gap: 2px;
+
+}
+.game-grid-item{
+    background-color: rgb(238, 235, 231);
+}
+
+#gameButtonBack{
+    width: 100px;
 }

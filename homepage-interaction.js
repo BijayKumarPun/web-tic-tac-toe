@@ -27,6 +27,7 @@ function onClickAbout(){
         document.getElementById("buttonAbout").innerText = "Back";
 
         //set data 
+
       showElement('about-game');
 
     }
@@ -82,6 +83,12 @@ for(element in hideElementsByClass.arguments){
     var e = arguments[element];
    document.getElementsByClassName(e)[0].style.visibility='hidden';
 }
+}
+
+//test
+shouldHideMenuContainer = true;
+if(shouldHideMenuContainer){
+    document.getElementsByClassName("menu-container")[0].style.display="none";
 }
 
 

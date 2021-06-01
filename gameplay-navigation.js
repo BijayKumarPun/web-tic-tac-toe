@@ -1,12 +1,9 @@
 
-console.group("Gameplay Interaction");
+console.group("Gameplay Navigation");
 function onClickBackButton(){
     console.log("onClickBackButton")
 hideGameplayUI();
 displayMainMenu();
-
-
-
 }
 
 document.getElementById("gameButtonBack").onclick = 

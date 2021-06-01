@@ -81,10 +81,21 @@
     grid-template-rows: 100px 100px 100px;
     grid-template-columns: 100px 100px 100px;
     gap: 2px;
+    /* justify-content: center; */
+    align-content: center;
 
 }
 .game-grid-item{
     background-color: rgb(238, 235, 231);
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: red; */
+    color:steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
 #gameButtonBack{

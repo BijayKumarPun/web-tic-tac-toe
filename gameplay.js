@@ -23,6 +23,7 @@ function initScore(){
 
 
 function onGridItemClicked(gridItem){
+    console.log(clickRecord);
     
     console.log(clickRecord);
     if(isGameComplete() || isGameOver()){
@@ -46,6 +47,8 @@ setFilled(gridItem);
 
 
 }
+
+
 function attachClickListener(){
     console.info("Attaching grid item click listener");
 
@@ -132,7 +135,7 @@ if(isGameComplete()){
 
     if(isGameOver()){
 console.error("Game Over");
-
+setGameOverText();
     }else{
         increaseTurn();
     }
@@ -249,7 +252,6 @@ function onBeginPlayerAI(){
 
 
 
-
 function isAIEnabled(){
     return false;
 }
@@ -332,6 +334,14 @@ function setWinnerText(winner){
     document.getElementById("game-info").style.color = "yellow";
     document.getElementById("game-info").style.fontSize="1.2em";
 }
+
+function setGameOverText(){
+    console.error("Game over");
+    document.getElementById("game-info").textContent = "Draw!";
+    document.getElementById("game-info").style.color = "pink";
+    document.getElementById("game-info").style.fontSize="1.2em";
+
+}
 console.groupEnd();
 
 
@@ -342,6 +352,11 @@ function startNewGame(){
     resetBoard();
     increaseTurn();
 
+}
+
+//reset button
+$("gameButtonReset").onclick = function(){
+    startNewGame();
 }
 
 

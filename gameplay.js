@@ -6,6 +6,7 @@ initFillRecorder();
 initTurnCounter(0);
 initScore();
 attachClickListener();
+hideGameplayUI();
 
 function $(id){
     return document.getElementById(id);
